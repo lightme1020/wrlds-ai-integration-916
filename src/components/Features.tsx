@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Activity, Shield, HardHat, Zap, ArrowRight, Box, Truck, Code, CheckCircle, Rocket, Factory, Microchip, Handshake, RefreshCcw, MessageSquare } from "lucide-react";
+import { FileText, Building, Calculator, BarChart, ArrowRight, Box, Truck, Code, CheckCircle, Rocket, Factory, Microchip, Handshake, RefreshCcw, MessageSquare } from "lucide-react";
 import { cn } from '@/lib/utils';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -23,27 +23,27 @@ const Features = () => {
 
   const features = [
     {
-      icon: <Activity className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Sports Performance",
-      description: "Specialized fabrics that analyze form, provide instant feedback, and help prevent injuries in athletic equipment.",
+      icon: <FileText className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "智能报告生成",
+      description: "基于AI技术的自动化报告生成，快速将建筑数据转化为专业、准确的项目报告。",
       image: "/lovable-uploads/48e540e5-6a25-44e4-b3f7-80f3bfc2777a.png"
     },
     {
-      icon: <Shield className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Military & Defense",
-      description: "Tactical gear with embedded sensors for soldier health monitoring, environmental awareness, and enhanced safety.",
+      icon: <Building className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "多类型建筑支持",
+      description: "覆盖住宅、商业、工业等各类建筑项目，提供定制化的报告模板和分析标准。",
       image: "/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png"
     },
     {
-      icon: <HardHat className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Industrial Safety",
-      description: "Protective workwear that detects hazards, monitors fatigue, and prevents workplace injuries through early intervention.",
+      icon: <Calculator className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "精确数据分析",
+      description: "智能分析建筑材料、结构、成本等关键数据，确保报告的准确性和专业性。",
       image: "/lovable-uploads/cf8966e3-de0d-445f-9fbd-ee6c48daa7ff.png"
     },
     {
-      icon: <Zap className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Thermal Regulation",
-      description: "Adaptive heating and cooling textiles that respond to body temperature and environmental conditions.",
+      icon: <BarChart className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "可视化图表",
+      description: "自动生成专业图表和数据可视化内容，让复杂的建筑信息一目了然。",
       image: "/lovable-uploads/6739bd63-bf19-4abd-bb23-0b613bbf7ac8.png"
     }
   ];
@@ -108,43 +108,43 @@ const Features = () => {
     };
   }, []);
 
-  const sensorCaseStudies = [{
+  const reportCaseStudies = [{
     image: "/lovable-uploads/843446fe-638e-4efb-b885-ed3cd505325a.png",
-    title: "Firefighter Safety",
-    description: "Advanced protective gear with gas, temperature, positioning, and motion sensors for safer emergency response."
+    title: "住宅建筑报告",
+    description: "高层住宅项目的结构分析、安全评估和合规性检查报告，确保建筑质量和居住安全。"
   }, {
     image: "/lovable-uploads/5463c9c5-0946-4280-a14b-17636ff69a98.png",
-    title: "Industrial Worker Protection",
-    description: "Safety workwear with vibration, pressure, and heating sensors to prevent injuries and monitor environmental hazards."
+    title: "商业综合体报告",
+    description: "大型商业建筑的消防安全、能耗分析和环境影响评估报告，满足各项监管要求。"
   }, {
     image: "/lovable-uploads/c5f8ee24-9815-4ebe-b65d-6f3d449feb8b.png",
-    title: "Sports Performance",
-    description: "Smart athletic wear with temperature and pressure sensors that track hydration, foot strike patterns, and performance metrics."
+    title: "绿色建筑认证",
+    description: "环保建筑项目的LEED认证、能效分析和可持续性评估报告，助力绿色建筑发展。"
   }];
   const stepFlowItems = [{
     icon: <Microchip className="h-10 w-10 text-gray-700" />,
-    title: "WRLDS Proprietary Modules",
-    description: "Our core technology components developed in-house"
+    title: "Autore核心引擎",
+    description: "我们自主研发的智能报告生成核心技术"
   }, {
     icon: <Factory className="h-10 w-10 text-gray-700" />,
-    title: "Vetted Off-the-Shelf Hardware",
-    description: "Carefully selected components that complement our technology"
+    title: "标准化模板库",
+    description: "丰富的建筑行业标准报告模板和规范"
   }, {
     icon: <Handshake className="h-10 w-10 text-gray-700" />,
-    title: "Vetted Production Partners",
-    description: "Expert manufacturing partners for quality and reliability"
+    title: "专业合作伙伴",
+    description: "与知名建筑事务所和工程公司的深度合作"
   }];
   const sprintPhases = [{
-    name: "Planning",
+    name: "需求分析",
     icon: <CheckCircle className="h-4 w-4" />
   }, {
-    name: "Development",
+    name: "方案开发",
     icon: <Code className="h-4 w-4" />
   }, {
-    name: "Testing",
+    name: "测试验证",
     icon: <Box className="h-4 w-4" />
   }, {
-    name: "Review",
+    name: "优化完善",
     icon: <RefreshCcw className="h-4 w-4" />
   }];
 
@@ -153,10 +153,10 @@ const Features = () => {
         <div className="w-full px-4 sm:px-6 lg:px-8" ref={featuresRef}> 
           <div className="text-center mb-10 max-w-3xl mx-auto feature-item">
             <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-              Textile Sensor Applications
+              智能报告系统应用
             </div>
             <p className="text-gray-600 mt-4">
-              Our textile sensor technology transforms ordinary fabrics into intelligent interfaces that collect data, monitor conditions, and enhance performance across diverse sectors.
+              我们的智能报告系统运用先进的AI技术，将复杂的建筑数据转化为清晰、准确、专业的报告文档，提升建筑行业的工作效率。
             </p>
           </div>
           
@@ -277,21 +277,21 @@ const Features = () => {
 
           <div className="mt-16 mb-8 feature-item">
             <div className="text-center mb-8">
-              <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-                Textile Sensor Applications
+            <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
+                智能报告系统应用
               </div>
-              <h3 className="text-2xl font-bold">Real-World Use Cases</h3>
+              <h3 className="text-2xl font-bold">实际应用案例</h3>
               <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
-                Explore how our textile sensors are applied in different professional contexts, 
-                from emergency response to construction and athletics.
-                <span className="block text-sm mt-1 text-blue-500">Scroll horizontally to see more examples →</span>
+                探索我们的智能报告系统在不同建筑项目中的实际应用，
+                从住宅建设到商业综合体和绿色建筑认证。
+                <span className="block text-sm mt-1 text-blue-500">水平滚动查看更多案例 →</span>
               </p>
             </div>
             
             <div className="rounded-xl overflow-hidden bg-white p-4 feature-item">
               <Carousel className="w-full max-w-7xl mx-auto">
                 <CarouselContent className="flex">
-                  {sensorCaseStudies.map((study, index) => <CarouselItem key={index} className="md:basis-1/3 flex-shrink-0">
+                  {reportCaseStudies.map((study, index) => <CarouselItem key={index} className="md:basis-1/3 flex-shrink-0">
                       <Card className="border border-gray-100 shadow-md">
                         <CardContent className="p-0">
                           <div className="w-full h-full">
@@ -311,19 +311,19 @@ const Features = () => {
                 </div>
               </Carousel>
               <div className="text-center mt-6 text-sm text-gray-600">
-                <p className="font-medium">These examples showcase just a few ways our textile sensors can enhance safety and performance</p>
+                <p className="font-medium">这些案例展示了我们的智能报告系统如何提升建筑行业的效率和专业性</p>
               </div>
             </div>
           </div>
         </div>
         <div className="text-center mt-12 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
           <Button onClick={scrollToContact} className="inline-flex items-center px-4 sm:px-6 py-3 bg-gray-700 hover:bg-gray-800 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto">
-            Need Custom Solutions?
+            需要定制解决方案？
             <MessageSquare className="ml-2 w-4 h-4 group-hover:animate-pulse" />
           </Button>
           
           <Button onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center px-4 sm:px-6 py-3 bg-white text-gray-700 rounded-lg border border-gray-200 hover:bg-gray-50 hover:shadow-md transition-all group w-full sm:w-auto">
-            Learn More About Our Technology
+            了解更多技术详情
             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
@@ -333,12 +333,12 @@ const Features = () => {
         <div className="w-full px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-              Our Approach
+              我们的方法
             </div>
-            <h2 className="text-3xl font-bold mb-4">How our technology works</h2>
+            <h2 className="text-3xl font-bold mb-4">技术工作原理</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              WRLDS builds hardware and software with proprietary and off-the-shelf modules, 
-              allowing us to develop completely unique solutions at high speed and lower risk.
+              Autore结合自主研发的核心技术和行业标准规范，
+              为客户快速开发独特、可靠的建筑报告解决方案。
             </p>
           </div>
           
@@ -360,9 +360,9 @@ const Features = () => {
                     <div className="space-y-2">
                       <h4 className="text-sm font-semibold">{item.title}</h4>
                       <p className="text-sm">{item.description}</p>
-                      {index === 0 && <p className="text-xs text-gray-500">Our proprietary technology provides the core foundation of every solution we build.</p>}
-                      {index === 1 && <p className="text-xs text-gray-500">We carefully select the best off-the-shelf components to complement our proprietary technology.</p>}
-                      {index === 2 && <p className="text-xs text-gray-500">Our network of production partners ensures quality manufacturing at scale.</p>}
+                      {index === 0 && <p className="text-xs text-gray-500">我们的专有技术为每个解决方案提供核心基础。</p>}
+                      {index === 1 && <p className="text-xs text-gray-500">我们精心整合最佳的行业标准来补充专有技术。</p>}
+                      {index === 2 && <p className="text-xs text-gray-500">我们的合作伙伴网络确保高质量的规模化服务。</p>}
                     </div>
                   </HoverCardContent>
                 </HoverCard>)}
@@ -389,15 +389,15 @@ const Features = () => {
               <div className="max-w-3xl mx-auto">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 gap-2">
                   <div className="flex items-center">
-                    <h3 className="text-xl font-bold">Adaptation Project</h3>
+                    <h3 className="text-xl font-bold">适配项目</h3>
                   </div>
                   <div className="flex items-center">
-                    <span className="text-sm text-gray-500 mr-2">Iterative Development</span>
+                    <span className="text-sm text-gray-500 mr-2">迭代开发</span>
                     <RefreshCcw className="h-5 w-5 text-gray-600 animate-rotate-slow" />
                   </div>
                 </div>
                 
-                <p className="text-gray-600 mb-4">Working iteratively with customers to tailor solutions to their needs</p>
+                <p className="text-gray-600 mb-4">与客户迭代合作，量身定制满足其需求的解决方案</p>
                 
                 <div className="relative mb-2">
                   <Progress value={progressValue} className="h-3 bg-gray-200" />
@@ -419,10 +419,10 @@ const Features = () => {
                     <div className="bg-green-100 rounded-full p-1 mr-2 shrink-0">
                       <CheckCircle className="h-4 w-4 text-green-600" />
                     </div>
-                    <span className="text-sm text-gray-600">Customer feedback integrated at every stage</span>
+                    <span className="text-sm text-gray-600">客户反馈融入每个阶段</span>
                   </div>
                   <div className="text-sm text-gray-500 flex items-center mt-2 sm:mt-0">
-                    <span className="mr-2">Continuous improvement</span>
+                    <span className="mr-2">持续改进</span>
                     <div className="flex space-x-1">
                       <span className="inline-block w-2 h-2 bg-gray-300 rounded-full animate-pulse"></span>
                       <span className="inline-block w-2 h-2 bg-gray-400 rounded-full animate-pulse animation-delay-200"></span>
@@ -457,8 +457,8 @@ const Features = () => {
                   <Rocket className="h-10 w-10 text-gray-700" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-2">Hitting the Market</h3>
-              <p className="text-gray-700">Ready to scale, produce, and launch</p>
+              <h3 className="text-xl font-bold mb-2">投入使用</h3>
+              <p className="text-gray-700">准备就绪，规模化部署和启动</p>
               <div className="flex justify-center mt-4 space-x-2">
                 <span className="inline-block w-3 h-3 rounded-full bg-gray-300 animate-pulse"></span>
                 <span className="inline-block w-3 h-3 rounded-full bg-gray-500 animate-pulse animation-delay-200"></span>
@@ -470,12 +470,12 @@ const Features = () => {
           <div className="text-center">
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
               <Link to="/tech-details" onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center px-4 sm:px-6 bg-white text-gray-700 rounded-lg border border-gray-200 hover:bg-gray-50 hover:shadow-md transition-all group py-3 w-full sm:w-auto justify-center">
-                Learn More About Our Technology
+                了解更多技术详情
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
               
               <Button onClick={scrollToContact} className="inline-flex items-center px-4 sm:px-6 py-3 bg-gray-700 hover:bg-gray-800 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto justify-center">
-                Contact Our Experts
+                联系我们的专家
                 <MessageSquare className="ml-2 w-4 h-4 group-hover:scale-110 transition-transform" />
               </Button>
             </div>

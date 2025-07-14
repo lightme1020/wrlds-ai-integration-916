@@ -21,10 +21,10 @@ const Index = () => {
   return (
     <PageLayout>
       <SEO 
-        title="WRLDS - Smart Textile Technology" 
-        description="WRLDS Technologies: Pioneering smart engineering solutions with textile sensors for sports, safety, and performance monitoring."
+        title="Autore - 建筑报告自动化系统" 
+        description="Autore：专注建筑领域的智能报告生成系统，为建筑行业提供高效、准确的自动化报告解决方案。"
         imageUrl="/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png"
-        keywords={['smart textiles', 'wearable technology', 'textile sensors', 'sports tech', 'safety monitoring', 'performance analytics', 'manufacturing']}
+        keywords={['建筑报告', '自动化系统', '建筑行业', '报告生成', '智能分析', '建筑技术', '工程管理']}
       />
       <Hero />
       <Features />
